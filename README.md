@@ -1,7 +1,7 @@
 # darcy
 
-extracts sentences to hide from the children
-*does not like line breaks in mid sentence*
+extracts sentences to hide from the children  
+   (*does not like line breaks in mid sentence*)  
 
 ```Shell
 Usage: darcy <filename> [number]
