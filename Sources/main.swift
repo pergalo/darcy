@@ -70,7 +70,7 @@ func remove_sentences(number: Int, infile: String, outfile: String, lessfile: St
         //print(s)
     }
     
-    let less = extracted.reversed().joined(separator: "\r\n")
+    let less = extracted.reversed().joined(separator: "\n")
     
     do {
         try lessfull.write(toFile: outfile, atomically: true, encoding: String.Encoding.utf8.rawValue)
