@@ -65,7 +65,7 @@ func remove_sentences(number: Int, infile: String, outfile: String, lessfile: St
     for i in 0..<reverse.count {
         let nsrange = parsed[reverse[i]]
         let sentence = (lessfull as NSString).substring(with: nsrange)
-        extracted.append(sentence)
+        extracted.append(sentence.trimmingCharacters(in: .whitespacesAndNewlines))
         lessfull.deleteCharacters(in: nsrange)
         //print(s)
     }
